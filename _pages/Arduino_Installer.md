@@ -1,72 +1,84 @@
 ---
-layout: post
+layout: page
 title: Arduino Installer
+permalink: /pages/Arduino_Installer
 date: 2021-07-16
 ---
 
-Lorem ipsum dolor sit amet, **BOLD** adipiscing elit. Fusce bibendum neque eget nunc mattis eu _ITALICS_ enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.
+# Arduino Installation Script
 
-![sample image]({{site.baseurl}}/assets/images/example.jpg)
+## Description
 
-Here's a sentence with a footnote. [^1]
+This tool prepares the environment to compile Arduino `.ino` files and upload them to an Arduino board using the command line. It automates the installation of necessary packages, sets up directories and configuration files, and provides a sample script to get started.
 
-## Some great heading (h2)
+## Installation
 
-Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum. In arcu magna, aliquet vel pretium et, molestie et arcu.
+1. Give execution permissions to the script:
+    ```sh
+    chmod +x install_arduino.sh
+    ```
 
-Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris. Proin eget nibh a massa vestibulum pretium. Suspendisse eu nisl a ante aliquet bibendum quis a nunc. Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+2. Execute the script as root:
+    ```sh
+    sudo ./install_arduino.sh
+    ```
+    or
+    ```sh
+    sudo bash install_arduino.sh
+    ```
 
-### Blockquotes (h3)
+## Information
 
-Praesent varius interdum vehicula. Aenean risus libero, placerat at vestibulum eget, ultricies eu enim. Praesent nulla tortor, malesuada adipiscing adipiscing sollicitudin, adipiscing eget est.
+This tool will:
+1. Install the following packages:
+   - **arduino-mk**: To compile the `.ino` files.
+   - **screen**: To see the output console.
 
-> This quote will _change_ your life. It will reveal the <i>secrets</i> of the universe, and all the wonders of humanity. Don't <em>misuse</em> it.
+2. Create the following directories:
+   - `arduino`
+   - `sketchbooks`
+   - `libraries`
 
-### Code blocks (h3)
+3. Generate the following files:
+   - `Makefile`: A configuration file for Arduino projects.
+   - `first_script.ino`: A sample Arduino script to blink an LED and print "Hello world" to the serial monitor.
 
-Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis mi ac felis pharetra aliquam. Curabitur dignissim accumsan rutrum.
+4. Ensure the `avrdude.conf` file is correctly placed for Arduino operations.
 
-```javascript
-function sayHello(name) {
-  if (!name) {
-    console.log("Hello World");
-  } else {
-    console.log(`Hello ${name}`);
-  }
-}
-```
+## Usage
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
+After running the script, you can use the following commands to work with your Arduino projects:
 
-##### Inline code, `pacman` (h5)
+- Compile the project:
+    ```sh
+    make
+    ```
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
+- Upload the compiled code to the Arduino board:
+    ```sh
+    make upload
+    ```
 
-### Oh hai, an unordered list!!
+- Clean up build files:
+    ```sh
+    make clean
+    ```
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
+- Combine commands:
+    ```sh
+    make upload clean
+    ```
 
-- First item, yo
-- Second item, dawg
-- Third item, what what?!
-- Fourth item, fo sheezy my neezy
+- Open the serial monitor:
+    ```sh
+    make monitor
+    ```
 
-### Oh hai, an ordered list!!
+- Exit the serial monitor:
+    - Press: `ctrl-a` + `ctrl-d`
 
-In arcu magna, aliquet vel pretium et, molestie et arcu. Mauris lobortis nulla et felis ullamcorper bibendum. Phasellus et hendrerit mauris.
+- Stop the monitor port:
+    ```sh
+    screen -X quit
+    ```
 
-1. First item, yo
-2. Second item, dawg
-3. Third item, what what?!
-4. Fourth item, fo sheezy my neezy
-
-### Tables
-
-| Title 1               | Title 2               | Title 3               | Title 4               |
-| --------------------- | --------------------- | --------------------- | --------------------- |
-| lorem                 | lorem ipsum           | lorem ipsum dolor     | lorem ipsum dolor sit |
-| lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit |
-| lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit |
-| lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit | lorem ipsum dolor sit |
-
-[^1]: This is the footnote.

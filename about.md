@@ -4,12 +4,10 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
-
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I am a passionate developer and lifelong learner who enjoys exploring new technologies and sharing knowledge through writing. This blog is a space where I document my journey, projects, and insights into the world of software development.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[juanjose.solorzano.c@gmail.com](mailto:juanjose.solorzano.c@gmail.com)
