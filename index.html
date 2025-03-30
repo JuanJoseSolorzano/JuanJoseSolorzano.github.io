@@ -1,19 +1,19 @@
 ---
 layout: default
 ---
-
+<div style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
+  <img src="assets/images/Profile.jpg" alt="Profile Image" class="profile-image" style="width:230px; height:230px; border-radius:50%;">
+  <p>
+    <strong>
+      I am an engineering and computer science professional with a background in Mechatronic Engineering and a Master's in Computer Science. My experience includes automation, control systems, Python programming, and research in computational architectures for emotional regulation. I have three years of expertise in test automation for the automotive sector, leveraging tools like Python, C, VSCode, Linux, and Git. Explore my projects on GitHub to collaborate on innovative solutions.
+    </strong>
+  </p>
+</div>
+<h2 class="text-left">Projects:</h2>
 <div class="archive">
-  {% for post in site.posts %} {% assign currDate = post.date | date: "%Y" %} {%
-  if currDate != date %}
-  <h1 class="archive-year">{{ currDate }}</h1>
-  {% assign date = currDate %} {% endif %}
-  <div class="archive-item">
-    <span class="post-date archive-date fs-4"
-      >{{ post.date | date: "%B %d, %Y" }}</span
-    >
-    <a href="{{ post.url | relative_url }}" class="archive-title fs-4"
-      >{{ post.title }}</a
-    >
-  </div>
+  {% for post in site.pages %}
+    <div class="archive-item">
+      <a href="{{ post.url | relative_url }}" class="archive-title fs-4">{{ post.title }}</a>
+    </div>
   {% endfor %}
 </div>

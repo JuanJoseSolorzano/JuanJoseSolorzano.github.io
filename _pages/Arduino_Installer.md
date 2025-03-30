@@ -1,6 +1,7 @@
 ---
 layout: post
-title: This post demonstrates post content styles
+title: Arduino Installer
+date: 2021-07-16
 ---
 
 Lorem ipsum dolor sit amet, **BOLD** adipiscing elit. Fusce bibendum neque eget nunc mattis eu _ITALICS_ enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.

@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Portfolio
-permalink: /portfolio/
+title: Some Stuff
+permalink: /stuff/
 ---
 
-### Sample Portfolio
+### Definition
 
-These are screencaps from Chungking Express
+Here you will find some interesting things ...
 
 ![Chungking Express Screencap 1]({{site.baseurl}}/assets/images/sample_portfolio/1.jpg)
 ![Chungking Express Screencap 2]({{site.baseurl}}/assets/images/sample_portfolio/2.jpg)
