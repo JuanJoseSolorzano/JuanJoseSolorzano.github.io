@@ -8,6 +8,7 @@ date: 2021-07-16
 # Arduino Installation Script
 
 ## Description
+[![GitHub](https://img.icons8.com/ios-filled/50/000000/github.png)](https://github.com/JuanJoseSolorzano/Arduino_Installer)Repository
 
 This tool prepares the environment to compile Arduino `.ino` files and upload them to an Arduino board using the command line. It automates the installation of necessary packages, sets up directories and configuration files, and provides a sample script to get started.
 

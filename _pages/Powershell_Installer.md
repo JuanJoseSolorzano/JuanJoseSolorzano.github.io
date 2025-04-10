@@ -6,6 +6,7 @@ date: 2021-07-16
 ---
 
 # PS1 Suite Installer
+[![GitHub](https://img.icons8.com/ios-filled/50/000000/github.png)](https://github.com/JuanJoseSolorzano/Powershell_Installer)Repository
 
 This project is a C program designed to automate the installation and configuration of a PowerShell suite on Windows. It downloads and installs a specific version of PowerShell, sets up necessary configurations, and installs additional tools and settings.
 
