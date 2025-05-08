@@ -48,6 +48,7 @@ Now, we have Jenkins server running on port 8080, so we can access it through an
 http://localhost:8080 (http://127.0.0.1:8080)
 ```
 **You will see the following login window:**
+
 ![Chungking Express Screencap 1]({{site.baseurl}}/assets/images/jenkins/login_window.png)
 
 The password needed is in: 
