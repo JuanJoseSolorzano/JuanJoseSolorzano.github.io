@@ -48,8 +48,7 @@ Now, we have Jenkins server running on port 8080, so we can access it through an
 http://localhost:8080 (http://127.0.0.1:8080)
 ```
 **You will see the following login window:**
-
-![alt text](images/jenkins/login_window.png "Getting Started On Jenkins")
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/login_window.png)
 
 The password needed is in: 
 ```
@@ -61,36 +60,36 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 install the suggested plugins option, and create an user:
 
-![alt text](images/jenkins/suggested_plugins.png "Title")
-![alt text](images/jenkins/user_creation.png "Title")
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/suggested_plugins.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/user_creation.png)
 
 In the URL option, in this case we will use our local IP to get acces localy:
 
-![alt text](images/jenkins/URL_cnf.png "Title")
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/URL_cnf.png)
 
 finally, press 'start using Jenkins' button, and you will see:
 
-![alt text](images/jenkins/Jenkins_Main.png "Title")
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Jenkins_Main.png)
 
 We can also access to Jenkins from the host machine (Windows11):
 
-![alt text](images/jenkins/Jenkins_from_host.png "Title")
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Jenkins_from_host.png)
 
-![alt text](images/jenkins/Jenkins_from_host_2.png "Title")
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Jenkins_from_host_2.png)
 
 ## Creating a Job
 No we will create a Jenkins job using the VM as an agent.
 In the Dashboard, we can see the following options:
 
-![alt text](images/jenkins/Job_creation_1.png "Title")
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Job_creation_1.png)
 
 In this example we will create a simple periodic task using a pipeline script:
 
-![alt text](images/jenkins/New_item_creation.png "Title")
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/New_item_creation.png)
 
 And then configure the adding a description, a trigger and defying the pipe line:
 
-![alt text](images/jenkins/trigger_example_1.png "Title")
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/trigger_example_1.png)
 
 As an example, this will be the pipeline:
 ```
@@ -109,13 +108,13 @@ pipeline {
 }
 ```
 Once the Job is saved you will see the dashboard and the execution status:
-![alt text](images/jenkins/Executed_Job.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Executed_Job.png)
 
 Inside of the Job, you will see the builds status, and inside of each build you will find the log or the console output:
 
-![alt text](images/jenkins/Job_builds_status.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Job_builds_status.png)
 
-![alt text](images/jenkins/build_status.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/build_status.png)
 
 ## Creating an Agent
 In a real environment we will working with agents (Nodes). The agents are others servers or computers which works as host to store the output of a Jenkins Job. 
@@ -123,26 +122,25 @@ For the following example, we will use our host machine (Windows11) as a Agent (
 
 1. In Manage Jenkins options we will find the Node Option:
 
-![alt text](images/jenkins/Node_creation_1.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_creation_1.png)
 
 Right now, we only have the VM agent:
 
-![alt text](images/jenkins/Node_creation_2.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_creation_2.png)
 
 2. Select '+ New Node' and set the agent name and we select the 'Type' as 'Permanent Agent'
 
-![alt text](images/jenkins/Node_creation_3.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_creation_3.png)
 
 Then, fill all the necessaries space:
 
-![alt text](images/jenkins/Node_creation_4.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_creation_4.png)
 
-
-![alt text](images/jenkins/Node_creation_5.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_creation_5.png)
 
 Now, we'll have an Agent, but it is not working yet, we need to start the agent in the agent machine, in this case, in the host machine. To do this we will need to install some Java dependencies on our Agent machine, and execute a command to initialize the agent. When you just recently created the Agent you will see the command necessary to start the agent:
 
-![alt text](images/jenkins/Node_creation_6.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_creation_6.png)
 
 As you can see in the image, it is necessary that the Agent machine have the Java package installed, 
 1. In the Agent machine we need to have Java installed, open a terminal and run:
@@ -167,16 +165,16 @@ java -jar agent.jar -url http://localhost:8080/ -secret @secret-file -name "Wind
 Remember, you will need to change the localhost to the Jenkins server IP, and change the directory to the specified: 'D:/jenkins/'
 
 Now you will see in the windows terminal something like:
-![alt text](images/jenkins/Node_creatation_7.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_creation_7.png)
 
 Now the node is active:
-![alt text](images/jenkins/Node_creation_8.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_creation_8.png)
 
 Now, for the previos created Job, we will indicate that only will be executed it by the windows11 Agent:
 
-![alt text](images/jenkins/Node_execution_1.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_execution_1.png)
 
-![alt text](images/jenkins/Node_execution_2.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_execution_2.png)
 
 Now, we could clone a GitHub repository and find it in the Agent machine once the Job fished. To do this, we will change the pipeline:
 
@@ -196,9 +194,9 @@ pipeline {
 ```
 When running you will see the repository cloned:
 
-![alt text](images/jenkins/Node_execution_3.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_execution_3.png)
 
-![alt text](images/jenkins/Node_execution_4.png)
+![Chungking Express Screencap 5]({{site.baseurl}}/assets/images/jenkins/Node_execution_4.png)
 
 ## Jenkins & GitHub webhooks
 ....
