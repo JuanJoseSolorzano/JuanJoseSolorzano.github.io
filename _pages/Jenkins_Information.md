@@ -74,6 +74,7 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 Follow the setup wizard, install the suggested plugins, and create a user:
 
 ![Suggested Plugins]({{site.baseurl}}/assets/images/jenkins/suggested_plugins.png){: width="600" height="400" }
+
 ![User Creation]({{site.baseurl}}/assets/images/jenkins/user_creation.png){: width="600" height="400" }
 
 In the URL configuration step, use your local IP to access Jenkins locally:
@@ -87,6 +88,7 @@ Finally, press the 'Start using Jenkins' button, and you will see the Jenkins da
 You can also access Jenkins from the host machine (Windows 11):
 
 ![Access from Host]({{site.baseurl}}/assets/images/jenkins/Jenkins_from_host.png){: width="600" height="400" }
+
 ![Access from Host 2]({{site.baseurl}}/assets/images/jenkins/Jenkins_from_host_2.png){: width="600" height="400" }
 
 ## Creating a Job
@@ -126,6 +128,7 @@ Once the job is saved, you will see the dashboard and the execution status:
 Inside the job, you will see the build status, and within each build, you can find the log or console output:
 
 ![Build Status]({{site.baseurl}}/assets/images/jenkins/Job_builds_status.png){: width="600" height="400" }
+
 ![Console Output]({{site.baseurl}}/assets/images/jenkins/build_status.png){: width="600" height="400" }
 
 ## Creating an Agent
@@ -148,6 +151,7 @@ Select '+ New Node', set the agent name, and select the 'Type' as 'Permanent Age
 Then, fill in all the necessary fields:
 
 ![Node Creation 4]({{site.baseurl}}/assets/images/jenkins/Node_creation_4.png){: width="900" height="400" }
+
 ![Node Creation 5]({{site.baseurl}}/assets/images/jenkins/Node_creation_5.png){: width="900" height="400" }
 
 Now, we have an agent, but it is not active yet. We need to start the agent on the agent machine (in this case, the host machine). To do this, we need to install some Java dependencies on the agent machine and execute a command to initialize the agent. When you create the agent, you will see the necessary command to start it:
@@ -186,6 +190,7 @@ The node is now active:
 For the previously created job, we will specify that it should only be executed by the Windows 11 agent:
 
 ![Node Execution 1]({{site.baseurl}}/assets/images/jenkins/Node_execution_1.png){: width="900" height="400" }
+
 ![Node Execution 2]({{site.baseurl}}/assets/images/jenkins/Node_execution_2.png){: width="900" height="400" }
 
 Now, we can clone a GitHub repository and find it on the agent machine once the job finishes. To do this, we will modify the pipeline:
@@ -208,6 +213,7 @@ pipeline {
 When running the job, you will see the repository cloned:
 
 ![Node Execution 3]({{site.baseurl}}/assets/images/jenkins/Node_execution_3.png){: width="900" height="400" }
+
 ![Node Execution 4]({{site.baseurl}}/assets/images/jenkins/Node_execution_4.png){: width="900" height="400" }
 
 ## Jenkins & GitHub Webhooks
