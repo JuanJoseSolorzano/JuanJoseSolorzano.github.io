@@ -1,12 +1,8 @@
 ---
 layout: page
-title: Some Stuff
+title: Some Images
 permalink: /stuff/
 ---
-
-### Definition
-
-Here you will find some interesting things ...
 
 ![Chungking Express Screencap 1]({{site.baseurl}}/assets/images/sample_portfolio/1.jpg)
 ![Chungking Express Screencap 2]({{site.baseurl}}/assets/images/sample_portfolio/2.jpg)
