@@ -5,11 +5,10 @@ permalink: /pages/Jenkins_Information/
 date: 2021-07-16
 ---
 
-# Jenkins
-Here we won't discuss the common questions: **_What is Jenkins?_** or **_What can Jenkins do?_**. Instead, we will demonstrate step-by-step the process of using Jenkins, including how to install it, its dependencies, and more. For this tutorial, we will use a Virtual Machine (VM) running Debian 12 as the operating system and ZSH as the shell.
+#### Here we won't discuss the common questions: **_What is Jenkins?_** or **_What can Jenkins do?_**. Instead, we will demonstrate step-by-step the process of using Jenkins, including how to install it, its dependencies, and more. For this tutorial, we will use a Virtual Machine (VM) running Debian 12 as the operating system and ZSH as the shell.
 
 ## Installing Jenkins
-Jenkins is a server application, which means it will run on a machine, sharing and receiving data. The first step is to install the Jenkins server on our system.
+#### Jenkins is a server application, which means it will run on a machine, sharing and receiving data. The first step is to install the Jenkins server on our system.
 
 1. **Installing Java:** Since Jenkins is a Java application, we need to install Java if it is not already installed.
 
@@ -40,14 +39,14 @@ Jenkins is a server application, which means it will run on a machine, sharing a
     sudo systemctl start jenkins
     sudo systemctl enable jenkins
     ```
-    Jenkins runs on port 8080 by default, so we need to open this port in our firewall:
+    [?] Jenkins runs on port 8080 by default, so we need to open this port in our firewall:
     ```
     sudo ufw allow 8080
     sudo ufw reload
     ```
 
 ## Accessing Jenkins
-Now that the Jenkins server is running on port 8080, we can access it through a web browser. For example, using Firefox:
+#### Now that the Jenkins server is running on port 8080, we can access it through a web browser. For example, using Firefox:
 
 ```
 http://localhost:8080 (http://127.0.0.1:8080)
