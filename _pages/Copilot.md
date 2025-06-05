@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Copilot Information
-permalink: /pages/Jenkins_Information/
+permalink: /pages/Copilot/
 date: 2021-07-16
 ---
 ## About Copilot Agent
