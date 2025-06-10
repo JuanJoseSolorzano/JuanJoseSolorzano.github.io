@@ -7,6 +7,8 @@ date: 2021-07-16
 
 ![Jenkins Emblem]({{site.baseurl}}/assets/images/jenkins/Jenkins_Emblem.png){: width="400" height="400" style="float: left; margin-left: -60px; margin-bottom: 20px;" } 
 
+Hello everyone, this video goes for setup your own Jenkins server, using a Virtual
+
 Here we won't discuss the common questions: **_What is Jenkins?_** or **_What can Jenkins do?_**. Instead, we will demonstrate step-by-step the process of using Jenkins, including how to install it, its dependencies, and more. For this tutorial, we will use a Virtual Machine (VM) running Debian 12 as the operating system and ZSH as the shell.
 
 <nav class="navbar navbar-expand-lg navbar-light" style="margin-bottom:auto; margin-top: auto;"></nav>
