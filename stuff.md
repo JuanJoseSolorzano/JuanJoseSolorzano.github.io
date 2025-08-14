@@ -4,7 +4,9 @@ title: Some Images
 permalink: /stuff/
 ---
 
-# What is a DevOps?
+# Overview Of DevOps
+
+## What is a DevOps?
 
 - The term (development and operations) is an extensions of agile develpment environments that aims to enhence the process of software delivery as a whole.
 
@@ -32,12 +34,10 @@ To become a DevOps, it is necessary to change the company culture. It must to ch
     - the way people are organized.
     - the way people are measured.
 
-
+## Agile perspective.
 Waterfall > Agile > DevOps are methods for software development and delivery.
 Monoliths > SOA > Microservices are architecture: ways that software is build.
 Physical sevices > VMS > Containers are used to create infrastructure: basic services such as communication and storage.
-
----
 
 2007 Patrick Debois: Dev and Ops worked ineffectively and not together.
 2008 Agile Infrastructure
@@ -45,6 +45,59 @@ Physical sevices > VMS > Containers are used to create infrastructure: basic ser
 2010 Continuous Delivary - Throgh automation of the build, deploy and test process, 
      along with improved collaboration.
 2013 Lean principle.
+ 
+---- 
+
+# Thinking DevOps
+
+## Code reuse dilemma:
+    - Code has 80% of what you need but 20% is missing
+
+## Social coding solution:
+    - Discuss with the repo **owner**.
+    - Agree to develop it.
+    - Open an **Issue** and assign it to yourself.
+    - **Fork** the code and make your changes.
+    - Issue a **Pull Request** to review and merge back.
+
+## Git Repository Guidelines
+    - The same that we already know about it.
+
+## The size of the Batches
+    Working in small batches means devlivering something useful quickly.
+    Using singe piece flow leads to faster feedback loops
+
+## Minimal Viable Product (VMP):
+    - MVP is a tool for learning.
+    - The experiment may fail and taht's okay.
+    - Is the minimal thing that you can do to teset your hypothesis.
+
+## Quiz
+    - Which of these is typical of traditional thinkning?
+        ANS: Rebuilding 100% of teh code to get the 20% change you need.
+    - Which of these is part of minimum viable product?
+        ANS: Should I pivot or perservere?
+
+## Test Driven Development (TDD)
+    - Test your code, but first create cases and then create code.
+    - Red->Green->Refractor cycle. 
+    It is important: It saves time whe developing, you can code faster and with more confidence, It ensures the code is working as expected. It ensuere that future changes do not break you code, In order to create a DevOps CI/CD pipeline , all testing must be automated
+
+## Behavior driven development (BDD)
+    - BDD focuses on the behavior of the system from the outside in. It looks at the sysstem as a consumer of it.
+    - BDD uses an approachable syntax that everyone can understand.
+    - It improves the communication.
+
+## Cloud Native Microservices (CNM)
+    - CNM is acollection of independintly deplyable microservices.
+    - Stateless microservices each maintain their own state in a separate database or persistent object store.
+    - Microservices are loosly coupled services, designed for scalability and communication with APIs.
+
+
+
+
+
+
 
 
 
