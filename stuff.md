@@ -93,32 +93,50 @@ Physical sevices > VMS > Containers are used to create infrastructure: basic ser
     - Stateless microservices each maintain their own state in a separate database or persistent object store.
     - Microservices are loosly coupled services, designed for scalability and communication with APIs.
 
+# Working DevOps
+    - Culture of teaming and collaboration.
+    - Agil development as a shared discipline.
+    - Push smaller releases faster
 
+## Taylorism
+    - Is regarding the Industrial revolution. It describes how to work as autmotive line assembly, working in silos.
+    _Software development is bespoke:_
+        - Sofwarare development is NOT like assebling automobiiles.
+        - Most of the parts do not exist yet.
+        - Software develpment is craft work.
 
+    - Command and control is not Agile.
+    - Stop working in silos
+    - Let your people amaze you.
 
+    - Working DevOps means pushing small releases faster in order to get feedback , minimize risk, and maximize learning.
+    - Taylorims was designed for factory work, while software development is like craft work.
 
+# Software Engineering vs civil engineering
+    - SW stak is constantly updated.
+    - 
+# Required DevOps behavior.
+    - DevOps delivers a continual series of small changes.
+    - Development wants innovation and Operation wants stability. But you cannot get both.
+    
+## Required DevOps behaviors
+    - Shared ownership and high collaboration.
+    - Risk managment by embracing change.
+    - Ephemeral infrastructure as code.
+    - Automated self-service.
+    - Feedback loops and data-driven responsability.
 
+# Infrestructre as code
+    - Described an executable textual format.
+    - Configure using that description.
+    - Configure the system .
+    - Never perform configurations manually.
+    - Use version control.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Continuous Integration and Continuous Delevery.
+    - CI/CD is not one thing.
+    - Continuous Integration is: Continuously building, testing, and merging to master.
+    - Continuous Delivery is: Continuosly deploying to a production-like environment.
 
 
 
