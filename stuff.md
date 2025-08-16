@@ -3,9 +3,10 @@ layout: page
 title: General Information
 permalink: /stuff/
 ---
+Find interesting notes about trainings and courses taken. Get fun!
 
-# Overview Of DevOps
-
+<details>
+<summary><h1>Introduction to DevOps</h1></summary>
 ## What is a DevOps?
 
 - The term (development and operations) is an extensions of agile develpment environments that aims to enhence the process of software delivery as a whole.
@@ -146,8 +147,23 @@ Physical sevices > VMS > Containers are used to create infrastructure: basic ser
 ## There is no DevOps Teams.
     - DevOps is the jpractice of development and operations engineers working together during the intire software lifecycle, following Lean and Agile principles that allow them to deliver high-qualitiy results.
 
+ # DevOps metrics
+    - A baseline provides a concrete number for comparison as you implement you DevOps changes.
+    - Old school is focused on mean time to failure (MTTF).
+    - DevOps is focused on mean time to recovery (MTTR).
+    
+## Summary
+    - You should measure and reward what you want to improve.
+    - Measuring social metrics leads to improved socialization and measuring DevOps metrics allows you to see progression toward goals.
+    - DevOps changes the objective of problem resolution from failure prvention to failure recovery.
 
-<details>
-    <summary>DevOps Notes</summary>
-    This is an example
+# Vanity Metrics vs actionable metrics
+    - Vanity metrics may be applealing at first glance, but offer limited actiable insights. 
+    - Actionable metrics provide meaningful ways to measure your processes and work toward goals.
+
+# Comparison of DevOps to Site Reliability Engineering (SRE)
+    - SRE maintains separate developemnt and operations silos with one staffing pool.
+    - DevOps breaks down the silos into one team with one business objective.
+    - 
+
 </details>
