@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Some Images
+title: General Information
 permalink: /stuff/
 ---
 
@@ -146,8 +146,8 @@ Physical sevices > VMS > Containers are used to create infrastructure: basic ser
 ## There is no DevOps Teams.
     - DevOps is the jpractice of development and operations engineers working together during the intire software lifecycle, following Lean and Agile principles that allow them to deliver high-qualitiy results.
 
-## 
 
-
-
-
+<details>
+    <summary>DevOps Notes</summary>
+    This is an example
+</details>
