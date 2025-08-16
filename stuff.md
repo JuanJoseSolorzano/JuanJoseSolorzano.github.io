@@ -126,18 +126,27 @@ Physical sevices > VMS > Containers are used to create infrastructure: basic ser
     - Automated self-service.
     - Feedback loops and data-driven responsability.
 
-# Infrestructre as code
+## Infrestructre as code
     - Described an executable textual format.
     - Configure using that description.
     - Configure the system .
     - Never perform configurations manually.
     - Use version control.
 
-# Continuous Integration and Continuous Delevery.
+## Continuous Integration and Continuous Delevery.
     - CI/CD is not one thing.
     - Continuous Integration is: Continuously building, testing, and merging to master.
     - Continuous Delivery is: Continuosly deploying to a production-like environment.
 
+# Align teams with the business
+    - Each team has its own mission aligned with the business.
+    - Teams have end-to-end responsibility for what they build.
+    - Teams should have a long term mission.
+
+## There is no DevOps Teams.
+    - DevOps is the jpractice of development and operations engineers working together during the intire software lifecycle, following Lean and Agile principles that allow them to deliver high-qualitiy results.
+
+## 
 
 
 
