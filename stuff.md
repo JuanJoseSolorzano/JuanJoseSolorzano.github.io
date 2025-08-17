@@ -166,3 +166,65 @@ _Software development is bespoke:_
 - DevOps breaks down the silos into one team with one business objective.
 
 </details>
+
+<details markdown="1">
+<summary>Advanced Python Development Techniques</summary>
+
+# Set and deques
+    ```python
+    #Sets do not repeat once output
+    example_set = {1,2,3,4,5}
+    #Even if you see duplicates within
+    example_set = {1,1,2,3,4,5}
+    example_set.add(6)
+    print(example_set)
+    example_set.remove(2)
+    print(example_set)
+    ```
+    ```python
+    # A deque is a double-ended queue, it's a generalization of stacks and queues allowing
+    # you to efficently add or remove elements.
+    from collections impoort deque
+    my_deque = deque([1,2,3])
+    my_deque.append(4)
+    print(my_deque)
+    # removing elements from the left
+    my_deque.pop()
+    print(my_deque)
+    # removing elements from the right
+    my_deque.popleft()
+    print(my_deque)
+    ```
+## Undo and Redo actions using deques
+    ```python
+    from collections impoort deque
+    undo_stack = deque()
+    redo_stack = deque()
+    def perform_action(action):
+        undo_stack.append(action)
+        redo_stack.clear()
+    def undo():
+        if undo_stack:
+            action = undo_stack.pop()
+            redo_stack.append(action)
+    def redo():
+        if redo_stack:
+            action = redo_stack.pop()
+            undo_stack.append(action)
+
+    split_words = str("Hello world").split()
+    for word in split_words:
+        perform_action(word)
+        
+    print(undo_stack)
+
+    # undo action:
+    undo()
+    print(undo_stack)
+    # redo action:
+    redo()
+    print(undo_stack)
+    ```
+
+
+</details>
