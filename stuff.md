@@ -239,7 +239,7 @@ OEM -> Original Equipment Manufacturer: A company that produces parts, component
 
 # ASPICE 3.0 Model
 
-![ASPICE30](./assets/images/stuff_images/ASPICE/aspice30.png)({{site.baseurl}})
+![ASPICE30]({{site.baseurl}}/assets/images/stuff_images/ASPICE/aspice30.png)
 
 The ASPICE model has three process groups: 
     1. Primary Life Cycle Process.
