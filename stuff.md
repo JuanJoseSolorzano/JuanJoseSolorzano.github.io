@@ -262,6 +262,91 @@ ASPICE defines a process assessment model to evalute and rate the capability of 
         * Defines six capability levels (0-5) that indicate the maturity fo each process. Level 0 mean the process is not implemented. Level 5 means the process is optimized.
 TheA ASPICE  assessment method provides a standardized way to measure and improve software process against a reference benchmark.  
 
+# Module #2 Describing the ASPICE Model
+
+## ASPICE Model Description
+
+### Primary Life Cycle Process (SYS)
+
+### Primary Life Cycle Process (SYS)
+
+SYS.1 – Requirements Elicitation: Gather, document, and track requirements as required by stakeholders.
+
+SYS.2 – System Requirements Analysis: Analyze and refine the collected requirements to ensure clarity and feasibility.
+
+SYS.3 – System Architectural Design: Establish the overall system architecture and develop the system structure.
+
+SYS.4 – System Integration and Integration Test: Integrate system components and perform integration testing to verify interactions.
+
+SYS.5 – System Qualification Test: Provide evidence that the integrated system meets all specified requirements.
+
+*The System Engineering process group ensures that stakeholder requirements are fully captured, analyzed, and validated throughout the system development lifecycle.*
+
+### Primary Life Cycle Process (SWE)
+
+SWE.1 – Software Requirements Analysis: Collect and analyze software-specific requirements.
+
+SWE.2 – Software Architectural Design: Define the software architecture and allocate requirements to software components.
+
+SWE.3 – Software Detailed Design and Unit Construction: Develop detailed designs and construct software units.
+
+SWE.4 – Software Unit Verification: Verify individual software units against detailed design and requirements.
+
+SWE.5 – Software Integration and Integration Test: Integrate software units and perform integration testing.
+
+SWE.6 – Software Qualification Test: Provide evidence that the integrated software meets all requirements.
+
+*The Software Engineering process group focuses on ensuring that software requirements are addressed, implemented, and verified at each stage of development.*
+
+---
+** As a part of Automation Activities, the mostly close ASPICE process areas are:
+    Group: Primary life Cycle Process (SWE): 
+    - SWE.4 - Software Unit Verification.
+    - SWE.5 - Software Integration and Integration Test.
+    - SWE.6 - Software Qualification Testing.
+---
+
+## ASPICE Process Capability levels
+1. Level 0 (Incomplete):
+    
+    - The process is not implemented or fails t achieve its purpose.
+
+2. Level 1 (Performed):
+    
+    - The process achieve its purpose.
+
+3. Level 2 (Managed):
+
+    - The performed process is now implemented in a managed fashion.
+    - Performance is controlled and maintained.
+
+4. Level 3 (Established):
+    
+    - The process is established, capable, standardized and maintained.
+    - Standards for process performance are stablished.
+
+5. Level 4 (Predictable):
+    
+    - The process is quantitatively controlled and predictable.
+    - Performance varies within narrow, predictable limits.
+
+6. Leve 5 (Innovating):
+    
+    - The focus in on continuous improvement.
+    - Process innovation improve effectiveness and efficiency.
+
+`The capability levels range from an incomplete process at level 0 to a performed procedure at level 1, to managed standardized, and quantiatively controlled process at levels 2-4, to an optimized, continuously improving process at level 5.`
+
+`At Level 0, no code review process exists.`
+
+`Level 1-2 introduce basic manual processes.`
+
+`Level 3 establishes a standardized process.`
+
+`Level 4, quantitative control is added.`
+
+`Level 5, innovative improvements are made through automation and AI.`
+
 </details>
 
 <details markdown="1">
