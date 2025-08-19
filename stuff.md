@@ -168,6 +168,103 @@ _Software development is bespoke:_
 </details>
 
 <details markdown="1">
+
+<summary>Overview Of Automotive SPICE (ASPICE)</summary>
+
+# The Automotive SPICE (Software Improvement and Capability dEtermination).
+
+Is an adaptation of the **Software Process Improvements and Capability dEtermination** standard (ISO 15504), addapted specially for the Automotive industry.
+ASPICE provides a **framework for assessing and imporoving** the software development processes within automotive suppliers and manufactures. It helps ensure high-quiality software, better safety, and reliable performance in vehcles' electronic control units (ECUs)
+
+The ASPICE Model is based on the V-CYCLE, one of the Software Development Life Cycle (SDLC).
+
+## Software Development Life Cycle (SDLC)
+
+Is the process of creating software, from initial planning through deployment and ongoing maintenance
+
+SDLC has the following structure:
+
+    1. Requirements Analysis -> * Business Analyst * Project Manager * Product Manager.
+    2. System Design -> * Architect * Designer.
+    3. Implementation -> * Developer * Software Implementation.
+    4. Testing -> * Verification and Validation * Quality Assurance * Tester.
+    5. Deployment -> * Release Manager * DevOps Engineer * IT Operations.
+    6. Maintenance -> * Support Engineers * Testers.
+
+Each phase ensures quality and traceability throughout the software development process.
+
+## V - Model (an extension of the traditional Waterfall model)
+
+V-Model is an Verification and Validation model:
+
+![V_MODEL]({{site.baseurl}}/assets/images/stuff_images/ASPICE/vmodel.png)
+
+| Left-side  (develop side)                                                |   Right-Side  (testing side)
+|--------------------------------------------------------------------------|------------------|
+| Business Requirements Specification (Waht does the user want?)           | User Acceptance Testing 
+  System Requirements Specification   (What should the overall system do?) | System Integration Testing (Does the whole system meet the requirements?)
+  High Level Design / Architecture    (How will teh system be structure?)  | Component Testing (Do components work together?)
+  Low Level Design / Details (How each component be build?)                | Unit Testing (Does each component work?)
+  <-> Coding <-> | <-> coding <-> |
+
+```markdown
+[VALIDATION]  - and -  [VERIFICATION]
+Requirements     ->    User Acceptance
+    |                     |
+    v                     ^
+System Design    ->    System Testing
+    |                     |
+    v                     ^
+Architecture     ->   Integration Testing
+    |                     |
+    v                     ^
+Detailed Design  ->   Unit Testing
+    |                     |
+    v                     ^
+     Implementation (Coding)
+```
+This is an sequential model, and it is usefull fo requirements well-done. A disvantage is thata design cannot emerge during coding, since each phase must be sequetial. Oeverll, the V-Model provides a structured path from requirements to finished product.
+
+### ISO 26262
+    Is an international standard that provides functional safety requirements and processes for electrical and electronic systems within road vehicles. It aims to reduce safety reisks from malfunctions by defining development best practices.
+
+### ISO 21434
+    Is a new standard focused on cyber security for road vehicles. It provides a framework and process to manage cyber risks during the product life.  
+
+### ISO 21448
+    Is a road vehicles standard that specifies user experience and human-machine interface design.
+  
+OEM -> Original Equipment Manufacturer: A company that produces parts, components or complete products that are then used in another company's end product.
+-  
+
+# ASPICE 3.0 Model
+
+![ASPICE30](./assets/images/stuff_images/ASPICE/aspice30.png)({{site.baseurl}})
+
+The ASPICE model has three process groups: 
+    1. Primary Life Cycle Process.
+        - System Engineering Process group (SYS)
+        - Software Engineering process group (SWE)
+        - Acquisition process group (ACQ)
+        - Supply process group (SPL)
+    2. Organization Life Cycle Process.
+        - 
+    3. Supporting Life Cycle Process.
+
+
+## Process Assessment Model
+
+ASPICE defines a process assessment model to evalute and rate the capability of software process in the automitve indudtry. the ASPICE assessment model has two dimensions:
+
+    1. Process dimension:
+        * Covers teh software process within the scope of assessment.
+    2. Capability dimension:
+        * Defines six capability levels (0-5) that indicate the maturity fo each process. Level 0 mean the process is not implemented. Level 5 means the process is optimized.
+TheA ASPICE  assessment method provides a standardized way to measure and improve software process against a reference benchmark.  
+
+</details>
+
+<details markdown="1">
 <summary>Advanced Python Development Techniques</summary>
 
 # Set and deques
@@ -225,6 +322,4 @@ _Software development is bespoke:_
     redo()
     print(undo_stack)
     ```
-
-
 </details>
