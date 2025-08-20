@@ -347,6 +347,27 @@ SWE.6 – Software Qualification Test: Provide evidence that the integrated soft
 
 `Level 5, innovative improvements are made through automation and AI.`
 
+# Module 3. ASPICE Assessment & Certification
+
+ASPICE assessment is the process of evaluating the Capability, Matury of the Software Development Process in the Automotive Industry. - Process Assessment Model (PAM)
+
+ - When preparing for an assessment, what's a crucial step to consider?
+
+    ans: Utilizing the latest version of the Process Assessment Model (PAM)
+
+ - What is a vital aspect of assesement preparation?
+
+    ans: Collecting anymissing pieces of information or documentation.
+
+# ASPICE Benefits
+ 
+    - Demostrate Software Quality Capability.
+    - Guide process Improvement.
+    - Increase Customer Confidence.
+    - Meet Regularity or Contractual Requirements.
+    - Support Certification Goals.
+    - Continual Improvement.
+
 </details>
 
 <details markdown="1">
