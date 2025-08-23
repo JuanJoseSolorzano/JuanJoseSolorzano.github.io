@@ -371,6 +371,85 @@ ASPICE assessment is the process of evaluating the Capability, Matury of the Sof
 </details>
 
 <details markdown="1">
+<summary>Machine Learinng</summary>
+
+## Linear Regression
+
+Any straight line in the Cartesian plane (except vertical lines) can be described by the equation: `y = mx + b` Where: m is the slope of the line and b is the y-intercept. This equation is known as **Linear Equation**.
+
+     - m: The slope of the line, which represents the rate of change of y with respect to x.
+     - b: The y-intercept, which is the value of y when x is 0.
+
+Given two points \((x_1, y_1)\) and \((x_2, y_2)\), the slope \(m\) of the line is:
+
+```math
+m = \frac{y_2 - y_1}{x_2 - x_1}
+```
+The equation of the line in point-slope form is:
+```math
+y_1 - y_2 = m(x_1 - x_2)
+```
+Expanding this equation gives:
+```math
+y_1 - y_2 = m(x_1 - x_2)
+```
+```math
+y_1 - y_2 = m*x_1 - m*x_2
+```
+adding y_2 to both sides:
+```math
+y_1 = m*x_1 - m*x_2 + y_1
+```
+Re-order terms:
+```math
+y_1 = m*x_1 + (y_2 - m*x_2)
+```
+
+```math
+y_1 = m * 0 + (y_2 - m * x_2) 
+```
+```math
+b = y_2 - m * x_2
+```
+then, the equation will be:
+```math
+y = m * x + b
+```
+The following image illustrates the graph of the line using two points: 
+
+<img src="./assets/images/stuff_images/MachineLearing/ManualPlot1.png" alt="Graph of the linear equation" width="800" height="550">
+
+Now it solved:
+
+<img src="./assets/images/stuff_images/MachineLearing/ManualPlot2.png" alt="Graph of the linear equation" width="800" height="550">
+
+If those two points were our dataset to train a linear regression model, we could use the calculated values of (m) and (b) to make predictions using the linear equation: `y = m*x + b` on new data points.
+
+But what happens if we have more than two points, and we want to find the best straight line to fits with all data points?
+
+In this case, we need to use a method called **Least Squares** to find the optimal values of (m) and (b) that minimize the error between the predicted and actual values.
+
+The goal of linear regression is to find the line that best fits the data by minimizing the sum of the squared differences (errors) between the predicted values and the actual values.
+
+Mathematically, we want to minimize the following cost function:
+
+```math
+J(m, b) = \sum_{i=1}^{n} (y_i - (m*x_i + b))^2
+```
+
+Where:
+- \(J(m, b)\) is the cost function
+- \(n\) is the number of data points
+- \((x_i, y_i)\) are the coordinates of each data point
+
+The optimal values of (m) and (b) can be found using calculus or optimization algorithms.
+
+Once we have the best-fitting line, we can use it to make predictions on new data points.
+
+```
+
+
+<details markdown="1">
 <summary>Advanced Python Development Techniques</summary>
 
 # Set and deques
