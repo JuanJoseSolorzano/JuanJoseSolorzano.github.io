@@ -29,27 +29,23 @@ layout: default
 <div style="text-align: justify; margin-top: 0px; margin-bottom: 10px; margin-right: auto; font-size: 18px;">
   <p>
     <em>
-      In the following sections, you will find my projects and research work. Hoping they will be useful for you.
+      <img src="assets/images/certification_icon.png" alt="Certification Icon" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 8px;">
+      Below you can find the certifications I have obtained, demonstrating my commitment to continuous learning and professional development.
     </em>
   </p>
 </div>
 
-<div style="text-align: center; margin-bottom: 20px;">
+<div style="margin-bottom: 20px;">
   {% assign certs = site.static_files | where: "path", "/assets/images/certifications" %}
   {% for cert in site.static_files %}
     {% if cert.path contains "/assets/images/certifications/" %}
-      <a href="{{ cert.path | relative_url }}" target="_blank" style="font-size: 18px; color: #4ca0af; text-decoration: underline;">
-        View {{ cert.name }} ({{ cert.ext | upcase }})
+      <a href="{{ cert.path | relative_url }}" target="_blank" style="font-size: 18px; color: #bd41a8; text-decoration: underline;">
+       🔗 {{ cert.name }} ({{ cert.ext | upcase }})
       </a>
       <br>
     {% endif %}
   {% endfor %}
 </div>
-<!--
-<div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
-  <img src="assets/images/Certifications.png" alt="Example Image" style="width: 80%; height: 300px; border: 2px solid #ccc; border-radius: 10px;">
-</div>
--->
 <h2 class="text-left" style="font-size: 24px; font-weight: bold; color: #feffff; margin-top: 20px; margin-bottom: 10px; border-bottom: 2px solid #8f99ad; padding-bottom: 5px;">
   <em>
   Projects:
