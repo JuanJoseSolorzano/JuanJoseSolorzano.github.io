@@ -29,7 +29,7 @@ layout: default
 <div style="text-align: justify; margin-top: 0px; margin-bottom: 10px; margin-right: auto; font-size: 18px;">
   <p>
     <em>
-      <img src="assets/images/certification_icon.png" alt="Certification Icon" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 8px;">
+      <img src="{{ site.baseurl }}/assets/images/certifications.png" alt="Certification Icon" style="width: 28px; height: 28px; vertical-align: middle; margin-right: 8px;">
       Below you can find the certifications I have obtained, demonstrating my commitment to continuous learning and professional development.
     </em>
   </p>
@@ -39,9 +39,9 @@ layout: default
   {% assign certs = site.static_files | where: "path", "/assets/images/certifications" %}
   {% for cert in site.static_files %}
     {% if cert.path contains "/assets/images/certifications/" %}
-      <a style="color: rgb(26, 165, 68);">🔗</a>
+      <a style="color: rgb(135, 165, 26);">🔗</a>
       <a  href="{{ cert.path | relative_url }}" target="_blank" style="font-size: 18px; color: #44d397; text-decoration: underline;">
-        {{ cert.name }} ({{ cert.ext | upcase }})
+        {{ cert.name }}{{ cert.ext | upcase }}
       </a>
       <br>
     {% endif %}
