@@ -417,11 +417,11 @@ y = m * x + b
 ```
 The following image illustrates the graph of the line using two points: 
 
-<img src="./assets/images/stuff_images/MachineLearing/ManualPlot1.png" alt="Graph of the linear equation" width="800" height="550">
+<img src="{{site.baseurl}}/assets/images/stuff_images/MachineLearing/ManualPlot1.png" alt="Graph of the linear equation" width="800" height="550">
 
 Now it solved:
 
-<img src="./assets/images/stuff_images/MachineLearing/ManualPlot2.png" alt="Graph of the linear equation" width="800" height="550">
+<img src="{{site.baseurl}}/assets/images/stuff_images/MachineLearing/ManualPlot2.png" alt="Graph of the linear equation" width="800" height="550">
 
 If those two points were our dataset to train a linear regression model, we could use the calculated values of (m) and (b) to make predictions using the linear equation: `y = m*x + b` on new data points.
 
@@ -429,7 +429,7 @@ Mathematically, a straight line is represented by the equation: `y = mx + b`, ne
 
 see the following python notebook to explore how linear regression works:
 
-[View the interactive Jupyter Notebook: [linear_regression_example.ipynb](assets/utils/linear_regression_example.ipynb)]
+[View the interactive Jupyter Notebook: [linear_regression_example.ipynb]({{site.baseurl}}/assets/utils/linear_regression_example.ipynb)]
 
 
 </details>
