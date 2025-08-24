@@ -35,9 +35,15 @@ layout: default
 </div>
 
 <div style="text-align: center; margin-bottom: 20px;">
-  <a href="{{ site.baseurl }}/assets/images/certifications/ISTQB_FundationLevel.pdf" target="_blank" style="font-size: 18px; color: #4ca0af; text-decoration: underline;">
-    View ISTQB Foundation Level Certification (PDF)
-  </a>
+  {% assign certs = site.static_files | where: "path", "/assets/images/certifications" %}
+  {% for cert in site.static_files %}
+    {% if cert.path contains "/assets/images/certifications/" %}
+      <a href="{{ cert.path | relative_url }}" target="_blank" style="font-size: 18px; color: #4ca0af; text-decoration: underline;">
+        View {{ cert.name }} ({{ cert.ext | upcase }})
+      </a>
+      <br>
+    {% endif %}
+  {% endfor %}
 </div>
 <!--
 <div style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
@@ -65,17 +71,15 @@ layout: default
   </em>
 </h2>
 <div class="archive">
-  <details class="archive-item" style="font-family: 'Times New Roman', Times, serif;" open>
-    <summary onclick="this.parentElement.open = true;">
-      <em>
-        <a style="color: rgb(26, 165, 68);">🔗</a>
-        <a href="{{ site.baseurl }}/stuff/#introduction-to-devops" class="archive-title fs-4" style="color: #4ca0af;">Introduction to DevOps</a>
-      </em>
-    </summary>
+  <div class="archive-item" style="font-family: 'Times New Roman', Times, serif;">
+    <em>
+      <a style="color: rgb(26, 165, 68);">🔗</a>
+      <a href="{{ site.baseurl }}/stuff/#introduction-to-devops" class="archive-title fs-4" style="color: #4ca0af;">Introduction to DevOps</a>
+    </em>
     <div style="margin-left: 30px; margin-top: 10px;">
       <p>
         This article introduces the principles and practices of DevOps, covering automation, collaboration, and continuous integration for modern software development.
       </p>
     </div>
-  </details>
+  </div>
 </div>
