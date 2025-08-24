@@ -429,7 +429,9 @@ Mathematically, a straight line is represented by the equation: `y = mx + b`, ne
 
 see the following python notebook to explore how linear regression works:
 
-[View the interactive Jupyter Notebook: [linear_regression_example.ipynb]({{site.baseurl}}/assets/utils/linear_regression_example.ipynb)]
+[View the interactive Jupyter Notebook: [linear_regression_example.ipynb](https://colab.research.google.com/drive/1aM4aDaqrh0lCBTgdhiobPeF3IdSH0HxO)]
+
+# Gradient Descent algorithm
 
 
 </details>
