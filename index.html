@@ -39,7 +39,7 @@ layout: default
   {% for cert in site.static_files %}
     {% if cert.path contains "/assets/images/certifications/" %}
       <a style="color: rgb(202, 218, 61);">🔗</a>
-      <a  href="{{ cert.path | relative_url }}" target="_blank" style="font-size: 18px; color: #44d397; text-decoration: underline;">
+      <a  href="{{ cert.path | relative_url }}" target="_blank" style="font-size: 18px; color: #cbe637; text-decoration: underline;">
         {{ cert.name }}{{ cert.ext | upcase }}
       </a>
       <br>
