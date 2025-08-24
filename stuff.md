@@ -380,7 +380,7 @@ Any straight line in the Cartesian plane (except vertical lines) can be describe
      - m: The slope of the line, which represents the rate of change of y with respect to x.
      - b: The y-intercept, which is the value of y when x is 0.
 
-Given two points \((x_1, y_1)\) and \((x_2, y_2)\), the slope \(m\) of the line is:
+Given two points `(x_1, y_1)` and `(x_2, y_2)`, the slope `m` of the line is:
 
 ```math
 m = \frac{y_2 - y_1}{x_2 - x_1}
@@ -396,7 +396,7 @@ y_1 - y_2 = m(x_1 - x_2)
 ```math
 y_1 - y_2 = m*x_1 - m*x_2
 ```
-adding y_2 to both sides:
+adding `y_2` to both sides:
 ```math
 y_1 = m*x_1 - m*x_2 + y_1
 ```
@@ -425,29 +425,14 @@ Now it solved:
 
 If those two points were our dataset to train a linear regression model, we could use the calculated values of (m) and (b) to make predictions using the linear equation: `y = m*x + b` on new data points.
 
-But what happens if we have more than two points, and we want to find the best straight line to fits with all data points?
+Mathematically, a straight line is represented by the equation: `y = mx + b`, nevertheless, in machine learning, we often use the `w` instead of `m` to represent the slope, and as usual, we use `b` for the intercept.
 
-In this case, we need to use a method called **Least Squares** to find the optimal values of (m) and (b) that minimize the error between the predicted and actual values.
+see the following python notebook to explore how linear regression works:
 
-The goal of linear regression is to find the line that best fits the data by minimizing the sum of the squared differences (errors) between the predicted values and the actual values.
+[View the interactive Jupyter Notebook: [linear_regression_example.ipynb](assets/utils/linear_regression_example.ipynb)]
 
-Mathematically, we want to minimize the following cost function:
 
-```math
-J(m, b) = \sum_{i=1}^{n} (y_i - (m*x_i + b))^2
-```
-
-Where:
-- \(J(m, b)\) is the cost function
-- \(n\) is the number of data points
-- \((x_i, y_i)\) are the coordinates of each data point
-
-The optimal values of (m) and (b) can be found using calculus or optimization algorithms.
-
-Once we have the best-fitting line, we can use it to make predictions on new data points.
-
-```
-
+</details>
 
 <details markdown="1">
 <summary>Advanced Python Development Techniques</summary>
