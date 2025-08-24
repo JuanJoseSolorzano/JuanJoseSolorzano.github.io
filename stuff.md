@@ -5,6 +5,7 @@ permalink: /stuff/
 ---
 
 ## Find interesting notes about trainings and courses taken. Have fun!
+---
 
 <details markdown="1">
 <summary>Introduction to DevOps</summary>
