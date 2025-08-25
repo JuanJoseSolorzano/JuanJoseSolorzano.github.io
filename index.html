@@ -7,8 +7,9 @@ layout: default
   
   <!-- Profile Image -->
   <img src="assets/images/Profile.jpg" alt="Profile Image" class="profile-image" 
-       style="position: absolute; bottom: 0px; left: 10%; transform: translateX(-50%); width: 180px; height: 180px; border-radius: 50%; border: 5px solid rgb(71, 70, 70);">
+       style="position: absolute; bottom: 0px; left: 50%; transform: translateX(-50%); width: 180px; height: 180px; border-radius: 50%; border: 5px solid rgb(71, 70, 70);">
 </div>
+
 <div style="text-align: justify; margin-top: 0px; margin-bottom: 10px; margin-right: auto; font-size: 18px;">
   <p>
     <em>
@@ -20,12 +21,18 @@ layout: default
     </em>
   </p>
 </div>
-<div style="display: flex; align-items: right; gap: 20px; margin-bottom: 50px;">
+
+<!-- Social icons (GitHub, LinkedIn, CV) -->
+<div style="display: flex; align-items: center; justify-content: center; gap: 20px; margin-bottom: 50px;">
   <div class="container text-center" style="margin-top: auto; margin-left: -20px;">
-    <div class="container footer-container">{% include svg_icons.html %}</div>
+    <div class="container footer-container">
+      {% include svg_icons.html %}
+    </div>
   </div>
 </div>
+
 <nav class="navbar navbar-expand-lg navbar-light" style="margin-bottom: 20px; margin-top: -60px;"></nav>
+
 <div style="text-align: justify; margin-top: 0px; margin-bottom: 10px; margin-right: auto; font-size: 18px;">
   <p style="display: inline;">
     <em>
@@ -35,34 +42,40 @@ layout: default
 </div>
 
 <div style="margin-bottom: 20px;">
-  {% assign certs = site.static_files | where: "path", "/assets/images/certifications" %}
   {% for cert in site.static_files %}
     {% if cert.path contains "/assets/images/certifications/" %}
       <a style="color: rgb(202, 218, 61);">🔗</a>
-      <a  href="{{ cert.path | relative_url }}" target="_blank" style="font-size: 18px; color: #cbe637; text-decoration: underline;">
+      <a href="{{ cert.path | relative_url }}" target="_blank" style="font-size: 18px; color: #cbe637; text-decoration: underline;">
         {{ cert.name }}{{ cert.ext | upcase }}
       </a>
       <br>
     {% endif %}
   {% endfor %}
 </div>
+
 <h2 class="text-left" style="font-size: 24px; font-weight: bold; color: #feffff; margin-top: 20px; margin-bottom: 10px; border-bottom: 2px solid #8f99ad; padding-bottom: 5px;">
   <em>
-  Projects:
+    Projects:
   </em>
 </h2>
 
 <div class="archive-item" style="font-family: 'Times New Roman', Times, serif;">
-      <em>
-        <a style="color: rgb(26, 165, 68);">🔗</a> <a href="https://marketplace.visualstudio.com/publishers/Solorzano-JuanJose" class="archive-title fs-4" style="color: #4ca0af;">VSCode Extensions Projects</a>
-      </em>
+  <em>
+    <a style="color: rgb(26, 165, 68);">🔗</a> 
+    <a href="https://marketplace.visualstudio.com/publishers/Solorzano-JuanJose" class="archive-title fs-4" style="color: #4ca0af;">
+      VSCode Extensions Projects
+    </a>
+  </em>
 </div>
 
 <div class="archive">
   {% for post in site.pages %}
     <div class="archive-item" style="font-family: 'Times New Roman', Times, serif;">
       <em>
-        <a style="color: rgb(26, 165, 68);">🔗</a> <a href="{{ post.url | relative_url }}" class="archive-title fs-4" style="color: #4ca0af;">{{ post.title }}</a>
+        <a style="color: rgb(26, 165, 68);">🔗</a> 
+        <a href="{{ post.url | relative_url }}" class="archive-title fs-4" style="color: #4ca0af;">
+          {{ post.title }}
+        </a>
       </em>
     </div>
   {% endfor %}
@@ -70,14 +83,17 @@ layout: default
 
 <h2 class="text-left" style="font-size: 24px; font-weight: bold; color: #feffff; margin-top: 20px; margin-bottom: 10px; border-bottom: 2px solid #8f99ad; padding-bottom: 5px;">
   <em>
-  Informative Articles:
+    Informative Articles:
   </em>
 </h2>
+
 <div class="archive">
   <div class="archive-item" style="font-family: 'Times New Roman', Times, serif;">
     <em>
       <a style="color: rgb(26, 165, 68);">🔗</a>
-      <a href="{{ site.baseurl }}/stuff/#introduction-to-devops" class="archive-title fs-4" style="color: #4ca0af;">Introduction to DevOps</a>
+      <a href="{{ site.baseurl }}/stuff/#introduction-to-devops" class="archive-title fs-4" style="color: #4ca0af;">
+        Introduction to DevOps
+      </a>
     </em>
     <div style="margin-left: 30px; margin-top: 10px;">
       <p>

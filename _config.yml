@@ -53,6 +53,7 @@ footer-links:
   linkedin: juanjosesolorzano
   rss: # just type anything here for a working RSS icon
   twitter: 
+  cv: "https://drive.google.com/file/d/1wFHA2r4rMNUMObuBY7JwMah547orm6ET/view?usp=drive_link"
 
 plugins:
   - jekyll-seo-tag

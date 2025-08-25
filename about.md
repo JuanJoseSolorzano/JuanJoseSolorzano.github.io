@@ -12,4 +12,4 @@ _I am a passionate developer and lifelong learner who enjoys exploring new techn
 
 ### Currilum Vitae
 
-📌 [JuanJoseSolorzano_CV](https://drive.google.com/file/d/1xr-67WUPa6ml1sKPxZtX1Pe7G_b74JMI/view?usp=sharing)
+📌 [JuanJoseSolorzano_CV](https://drive.google.com/file/d/1wFHA2r4rMNUMObuBY7JwMah547orm6ET/view?usp=drive_link)
